@@ -1,0 +1,33 @@
+.recipe-container {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 64px);
+  margin-top: 64px;
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.recipe-list-container,
+.recipe-form-container {
+  width: 100%;
+  background-color: var(--kavia-dark);
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.recipe-form-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .recipe-container {
+    padding: 10px;
+  }
+}
