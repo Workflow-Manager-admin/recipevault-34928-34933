@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import RecipeContainer from './components/RecipeContainer';
 
 function App() {
   return (
@@ -8,28 +9,26 @@ function App() {
         <div className="container">
           <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
             <div className="logo">
-              <span className="logo-symbol">*</span> KAVIA AI
+              <span className="logo-symbol">🍲</span> RecipeVault
             </div>
-            <button className="btn">Template Button</button>
+            <div>
+              <a href="https://github.com/kavia-ai/RecipeVault" target="_blank" rel="noopener noreferrer" className="navbar-link">
+                About
+              </a>
+            </div>
           </div>
         </div>
       </nav>
 
       <main>
-        <div className="container">
-          <div className="hero">
-            <div className="subtitle">AI Workflow Manager Template</div>
-            
-            <h1 className="title">main_container_for_recipevault</h1>
-            
-            <div className="description">
-              Start building your application.
-            </div>
-            
-            <button className="btn btn-large">Button</button>
-          </div>
-        </div>
+        <RecipeContainer />
       </main>
+      
+      <footer className="footer">
+        <div className="container">
+          <p>&copy; {new Date().getFullYear()} RecipeVault - Your Personal Recipe Collection</p>
+        </div>
+      </footer>
     </div>
   );
 }
